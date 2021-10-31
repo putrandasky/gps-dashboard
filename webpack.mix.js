@@ -14,3 +14,16 @@ const mix = require('laravel-mix');
 mix.js('resources/js/dashboard/app.js', 'public/js/dashboard/app.js')
   .vue()
   .sass('resources/sass/app.scss', 'public/css');
+
+if (mix.inProduction()) {
+  mix.version();
+  mix.options({
+    terser: {
+      terserOptions: {
+        compress: {
+          drop_console: true
+        }
+      }
+    }
+  });
+}

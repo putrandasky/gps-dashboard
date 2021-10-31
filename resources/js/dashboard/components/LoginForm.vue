@@ -8,7 +8,7 @@
       <i class="ri-mail-line position-absolute text-secondary" style="top:8px;left:18px"></i>
     </b-form-group>
     <b-form-group class="position-relative" :invalid-feedback="errors.password" :state="statePassword">
-      <b-form-input class="form-control pl-5" placeholder="Password" v-model="input.password" :state="statePassword"></b-form-input>
+      <b-form-input type="password" class="form-control pl-5" placeholder="Password" v-model="input.password" :state="statePassword"></b-form-input>
       <i class="ri-key-2-line position-absolute text-secondary" style="top:8px;left:18px"></i>
 
     </b-form-group>

@@ -15,7 +15,7 @@
   <meta property="og:url" content="" />
   <meta property="og:description" content="">
   <link type="image/png" href="{{ asset('favicon.png') }}" rel="icon">
-      <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+      <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
   {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:400,700&display=swap" rel="stylesheet"> --}}

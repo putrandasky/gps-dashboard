@@ -147,7 +147,7 @@
       <b-row v-if="modalLoginOpen" class="w-100 mx-0 h-100 d-flex justify-content-center align-items-center">
         <b-col lg="3">
 
-          <b-card>
+          <b-card class="shadow">
             <div>
               <strong>
                 Login Form
