@@ -1,0 +1,21 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+// BootstrapVue
+@import '~bootstrap-vue/dist/bootstrap-vue.css';
+
+
+//remixicon
+@import 'remixicon/fonts/remixicon.css';
+
+
+#app {
+  height: 100%;
+}
