@@ -224,18 +224,5 @@ class DashboardController extends Controller
         }
         return $data;
     }
-    public function getMultiDataChart($model, $first_data_label_name, $first_data_label, $first_data_key, $first_data_id, $second_data_label_name, $second_data_label, $second_data_key, $second_data_id)
-    {
-        $data['label'][$first_data_label_name] = $first_data_label;
-        $data['label'][$second_data_label_name] = $second_data_label;
-        for ($a = 0; $a < count($second_data_id); $a++) {
-            $data['data_set'][$a]['label'] = $data['label'][$second_data_label_name][$a];
-            for ($i = 0; $i < count($first_data_id); $i++) {
-                $data['data_set'][$a]['chartData'][$i] = $model->where($second_data_key, $second_data_id[$a])
-                    ->where($first_data_key, $first_data_id[$i])
-                    ->count();
-            }
-        }
-        return $data;
-    }
+
 }
